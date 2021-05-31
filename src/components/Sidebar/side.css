@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  list-style: none;
+}
+
+.container {
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sideBar {
+  position: relative;
+  width: 27vw;
+  height: 100vh;
+  border-radius: 0 4% 4% 0%;
+  background-color: #ebf2f7;
+  -webkit-box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.247);
+          box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.247);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .sideBar .innerSide {
+  border-radius: 0 4% 4% 0%;
+  width: 27vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sideBar .innerSide .div1 {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.container .sideBar .innerSide .div1 .Content1 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
+.container .sideBar .innerSide .div1 .Content1 .pic {
+  width: 3.5vw;
+  height: 5vh;
+  background-color: #000;
+  border-radius: 50%;
+  margin-top: 0.9rem;
+  margin-left: 2rem;
+}
+
+.container .sideBar .innerSide .div1 .Content1 .des #des1 {
+  font-weight: 600;
+}
+
+.container .sideBar .innerSide .div1 .Content2 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 20vw;
+  height: 15vh;
+  text-align: center;
+}
+
+.container .sideBar .innerSide .div1 .Content2 .warpperClass {
+  width: 15vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container .sideBar .innerSide .div1 .Content2 .warpperClass .class1 {
+  background-image: url(https://image.flaticon.com/icons/png/512/151/151917.png);
+  height: 5vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #99efc9;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .sideBar .innerSide .div1 .Content2 .warpperClass .class2 {
+  background-image: url(https://image.flaticon.com/icons/png/512/1621/1621626.png);
+  height: 5vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .sideBar .innerSide .div1 .Content3 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 20vw;
+  height: 20vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideBar .innerSide .div1 .Content3 .innerDiv2 {
+  border-radius: 0.5rem;
+  background-color: #99efc9;
+  width: 13vw;
+  cursor: pointer;
+}
+
+.container .sideBar .innerSide .div1 .Content3 .innerDiv2 p {
+  font-weight: 600;
+}
+
+.container .secSide {
+  overflow-y: hidden;
+  position: relative;
+  display: none;
+  z-index: -1;
+  border-radius: 0 4% 4% 0%;
+  background-color: #ebf2f7;
+  width: 50vw;
+  height: 100vh;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .secSide .closeBtn {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  float: right;
+  margin: 1rem 1rem 0 0;
+}
+
+.container .secSide .form {
+  position: absolute;
+  left: 4rem;
+  top: 3.5rem;
+  width: 45vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.container .secSide .form .formTitle h1 {
+  font-size: 2rem;
+}
+
+.container .secSide .form .formTitle p {
+  font-weight: 500;
+}
+
+.container .secSide .form .fillables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .secSide .form .fillables label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.container .secSide .form .fillables input[type="text"] {
+  width: 20vw;
+  height: 4vh;
+  outline: none;
+  border: none;
+  margin-bottom: 0.6rem;
+  padding: 12px 12px;
+  font-size: 1rem;
+}
+
+.container .secSide .form .fillables input[type="number"] {
+  width: 16.5vw;
+  height: 4vh;
+  outline: none;
+  border: none;
+  margin-bottom: 0.6rem;
+  padding: 12px 12px;
+}
+
+.container .secSide .form .fillables span {
+  width: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3vh;
+  font-size: 1.2rem;
+}
+
+.container .secSide .form .fillables span p {
+  color: red;
+  margin-top: -0.5rem;
+}
+
+.container .secSide .form .fillables .Phncover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.container .secSide .form .fillables .Phncover #countryCode {
+  width: 3vw;
+}
+
+.container .secSide .form .fillables .suggestion {
+  position: absolute;
+  top: 34rem;
+  z-index: 999;
+  background-color: #fff;
+  color: #000;
+  width: 20vw;
+}
+
+.container .secSide .form .fillables .suggestion p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  margin-bottom: -1rem;
+  padding: 1rem;
+}
+
+.container .secSide .form .fillables .suggestion p:hover {
+  background-color: #5cc8a1;
+}
+
+.container .secSide .form .fillables textarea {
+  width: 27vw;
+  height: 15vh;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.container .secSide .form .fillables button[type="submit"] {
+  width: 15vw;
+  outline: none;
+  border: none;
+  background-color: #5cc8a1;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container .secSide2 {
+  display: block;
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+  z-index: 9;
+}
+
+.container .modal1 {
+  z-index: -9;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.281);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=side.css.map */

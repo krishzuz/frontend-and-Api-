@@ -1,0 +1,160 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.PostsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ebf2f7;
+    display: flex;
+    gap: 2em;
+    .Modal {
+        display: none;
+        z-index: 999;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.247);
+        width: 100vw;
+        height: 100vh;
+        .innerModal {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 60vw;
+            height: 60vh;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .closeModal {
+                border: none;
+                background-color: transparent;
+                float: right;
+                font-size: 2rem;
+                padding: 1rem;
+                // border: 1px solid black;
+                width: 5vw;
+                cursor: pointer;
+            }
+            #modalTile {
+                font-size: 2rem;
+                font-weight: 500;
+                margin: 4rem 0 1.5rem 0;
+            }
+            #modalSummary {
+                margin: 0 0 0.5rem 0;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 2rem;
+            }
+            #modalPublished {
+                margin-top: 2rem;
+                font-weight: 500;
+                color: #b9b9b9;
+            }
+        }
+    }
+    .innerPosts {
+        position: absolute;
+        right: 10%;
+        .fetchposts {
+            cursor: pointer;
+            box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.247);
+            padding: 0.5rem;
+            width: 55vw;
+            margin: 1rem;
+            border-radius: 0.5rem;
+            // height: 10vh;
+            display: flex;
+            background-color: #fff;
+            .title {
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 0 0 0.5rem 0;
+            }
+            .summary {
+                white-space: nowrap;
+                margin: 0 0 0.5rem 0;
+                // border: 1px solid black;
+                width: 50vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .published {
+                color: #b9b9b9;
+            }
+            .imgDiv {
+                display: flex;
+                background-color: pink;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 1vw;
+                height: 5vh;
+                border-radius: 50%;
+                padding: 2rem;
+                right: -5%;
+                cursor: pointer;
+                pointer-events: none;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .innerPosts2 {
+        // border: 1px solid black;
+        right: 0%;
+        margin-top: 3rem;
+        height: 70vh;
+        width: 69vw;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        .fetch2 {
+            cursor: pointer;
+            position: relative;
+            padding: 1rem;
+            width: 20vw;
+            height: 30vh;
+            .title {
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 2rem 0 0.5rem -2rem;
+            }
+            .summary {
+                margin: 0 0 0.5rem -2rem;
+                white-space: pre-line;
+                width: 15vw;
+                height: 10.3vh;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .published {
+                margin: 1.5rem 0 0rem -2rem;
+                color: #b9b9b9;
+            }
+            .imgDiv2 {
+                display: flex;
+                background-color: transparent;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 1vw;
+                height: 5vh;
+                border-radius: none;
+                right: 0%;
+                top: 0%;
+            }
+        }
+    }
+}

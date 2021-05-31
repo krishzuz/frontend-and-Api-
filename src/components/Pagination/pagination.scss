@@ -1,0 +1,46 @@
+.Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 5px solid black;
+    position: absolute;
+    left: 24%;
+    bottom: 2%;
+    .prvbtn {
+        width: 3%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        img {
+            cursor: pointer;
+        }
+    }
+    .nextbtn {
+        width: 3%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        img {
+            cursor: pointer;
+            transform: rotate(180deg);
+        }
+    }
+    .innerPagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #innerPageNo {
+        margin-left: 5rem;
+        padding: 1rem;
+        margin: 1rem;
+        li {
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 100%;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.Page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 24%;
+  bottom: 2%;
+}
+
+.Page .prvbtn {
+  width: 3%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.Page .prvbtn img {
+  cursor: pointer;
+}
+
+.Page .nextbtn {
+  width: 3%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.Page .nextbtn img {
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Page .innerPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Page #innerPageNo {
+  margin-left: 5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.Page #innerPageNo li {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=pagination.css.map */
